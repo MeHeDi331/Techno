@@ -77,7 +77,69 @@ nav{
     background-size: cover;
     background-position: center;
 }
+/* Letest news start */
+.news{
+    height: 40px;
+    width: 100%;
+    background-color: #0c0c0c;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.left{
+    padding-right: 10px;
+    
 
+
+}
+.left p, .right marquee{
+    display:inline-block;
+    color: white;
+    margin-top: 8px;
+}
+
+.welcome{
+    width: 100%;
+    height:600px;
+    background-color: #9c9a9ab1;
+}
+
+.inner-welcome{
+    width: 70%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+   padding-top: 100px;
+   
+    
+
+}
+.main-title{
+    font-size: 30px;
+}
+.left-welcome {
+    float: left;
+    width: 45%;
+    border-right: 4px solid #3b3c3b;
+    padding-right: 5px;
+
+}
+
+.left-welcome p{
+    padding-right: 5px;
+    margin-top: 10px;
+     color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+   
+}
+.right-img{
+    float:left;
+    width: 45%;
+    padding-left: 10px;
+
+}
 
 /* podict section */
 .product{
@@ -107,7 +169,7 @@ nav{
 }
 
 .product-box-1, .product-box-2, .product-box-3  {
-    width:33.3333%;
+    width:33.33%;
     height: 100%;
     float: left;
     text-align: center;
@@ -123,8 +185,14 @@ nav{
     border-radius: 0 0 10px 10px;
     color: white;
     font-weight: 400;
+    transition: 0.75sec ease all;
+
 }
 
+.products-box h3:hover{
+    color: coral;
+    background-color:dimgrey;
+}
 
 
 
@@ -155,6 +223,10 @@ nav{
         justify-content: center;
 
 }
+.inner-welcome{
+    width: 70%;
+   
+}
 
 /* product part */
 
@@ -162,14 +234,14 @@ nav{
     height: 600px;
 }
 .product-box-1, .product-box-2{
-    width: 50%;
+    width:50%;
     
 }
 
 .product-box-3{
     width: 100%;
     
-}
+} 
 
 .product-box-3 h3{
     width: 30%;
@@ -181,7 +253,8 @@ nav{
 
 /* menu part */
 @media (max-width:852px){
-
+     
+     
     .menu-bottom{
         display: none;
     }
@@ -200,14 +273,32 @@ nav{
     .product-box-3 h3{
         width: 60%;
     }
+    .inner-welcome{
+        display: flex;
+    }
+    .left-welcome{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+    .right-img{
+        width: 100%;
+        height: 400px;
+    }
+    /* 
 
-}
+     .inner-welcome{
+        width: 100%;
+        overflow: hidden;
+        float: none;
+
+    }
+    .right-img{
+        display: 100%;
+    } */
+} 
 
 
-.test{
-    width: 100%;
-    padding: 2% 0;
-    background-color: red;
-}
+
 
 
